@@ -1,0 +1,7 @@
+{
+  "name": "NEXUS CORE",
+  "version": "0.1.0",
+  "language": "en",
+  "memory_enabled": true,
+  "max_input_length": 4096
+}
