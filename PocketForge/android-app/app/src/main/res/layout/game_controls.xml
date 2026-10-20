@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://getandroid.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"> <!-- Transparente para ver el juego atrás -->
+
+    <!-- JOYSTICK IZQUIERDO: Control de movimiento (W, A, S, D) -->
+    <LinearLayout
+        android:id="@+id/joystickMovimiento"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:background="#44FFFFFF" 
+        android:gravity="center">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲\n◀  ▶\n▼"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- PANEL DERECHO: Botones de acción rápida -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        android:orientation="horizontal">
+
+        <!-- Botón de Agacharse (Shift) -->
+        <Button
+            android:id="@+id/btnShift"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="SHIFT"
+            android:backgroundTint="#66000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Botón de Saltar (Espacio) -->
+        <Button
+            android:id="@+id/btnSaltar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="SALTAR"
+            android:backgroundTint="#884CAF50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- ACCIONES DE RATÓN (Esquinas superiores) -->
+    <!-- Clic Izquierdo: Romper bloques / Atacar -->
+    <Button
+        android:id="@+id/btnPri"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:text="PRI"
+        android:backgroundTint="#66000000"
+        android:textColor="#FFFFFF" />
+
+    <!-- Clic Derecho: Colocar bloques / Usar objeto -->
+    <Button
+        android:id="@+id/btnSec"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="SEC"
+        android:backgroundTint="#66000000"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botón de Inventario (Tecla E) -->
+    <Button
+        android:id="@+id/btnInventario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="INVENTARIO (E)"
+        android:backgroundTint="#66000000"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://getandroid.com"
+    android:layout_width="match_match"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="16dp">
+
+    <!-- TITULO DEL LAUNCHER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PocketForge Mods"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- SECCIÓN DE BÚSQUEDA (Estilo PolyMC) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Caja de texto para escribir el mod -->
+        <EditText
+            android:id="@+id/cajaBusqueda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar mod (ej. Sodium, Optifine)..."
+            android:textColorHint="#888888"
+            android:textColor="#FFFFFF"
+            android:background="#2D2D2D"
+            android:padding="12dp" />
+
+        <!-- Botón para iniciar la búsqueda -->
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- ÁREA DONDE APARECERÁN LOS MODS ENCONTRADOS -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados de la búsqueda:"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Este contenedor simulará la lista táctil de mods -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#252525">
+
+        <LinearLayout
+            android:id="@+id/contenedorListaMods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            
+            <!-- Aquí tu código de Java meterá dinámicamente los mods de Modrinth -->
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
